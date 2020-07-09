@@ -28,12 +28,19 @@ jQuery(function ($) {
     /* ---------------------------------------------- /*
      * Preloader
     /* ---------------------------------------------- */
-
+/*
     $(window).ready(function() {
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
+*/
 
+
+    $( window ).load( function () {
+        $( "#loading" ).fadeOut( 500 );
+    } );
+
+    
 
 
 
